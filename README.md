@@ -1,7 +1,13 @@
 rpi-pico-builder
 ==========
 
-Build environment for Raspberry Pi Pico C/C++ SDK
+![][docker-build] ![][docker-pulls] ![][docker-image-size]
+
+Build environment for Raspberry Pi Pico (RP2040) C/C++ SDK
+
+```sh
+docker pull xingrz/rpi-pico-builder:latest
+```
 
 ## Usage
 
@@ -15,3 +21,7 @@ Build environment for Raspberry Pi Pico C/C++ SDK
     bash -c 'mkdir -p build && cd build && cmake .. && make blink'
    ```
 4. Copy `build/blink/blink.uf2` into the RPI-RP2 drive
+
+[docker-build]: https://shields.io/docker/cloud/build/xingrz/rpi-pico-builder?style=flat-square
+[docker-pulls]: https://shields.io/docker/pulls/xingrz/rpi-pico-builder?style=flat-square
+[docker-image-size]: https://shields.io/docker/image-size/xingrz/rpi-pico-builder?style=flat-square
